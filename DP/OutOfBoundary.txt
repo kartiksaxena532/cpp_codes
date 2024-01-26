@@ -1,0 +1,60 @@
+class Solution {
+public:
+    int findPaths(int m, int n, int N, int x, int y) {
+        const int M = 1000000000 + 7;
+        vector<vector<int>> dp(m, vector<int>(n, 0));
+        dp[x][y] = 1;
+        int count = 0;
+
+        for (int moves = 1; moves <= N; moves++) {
+            vector<vector<int>> temp(m, vector<int>(n, 0));
+
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (i == m - 1) count = (count + dp[i][j]) % M;
+                    if (j == n - 1) count = (count + dp[i][j]) % M;
+                    if (i == 0) count = (count + dp[i][j]) % M;
+                    if (j == 0) count = (count + dp[i][j]) % M;
+                    temp[i][j] = (
+                        ((i > 0 ? dp[i - 1][j] : 0) + (i < m - 1 ? dp[i + 1][j] : 0)) % M +
+                        ((j > 0 ? dp[i][j - 1] : 0) + (j < n - 1 ? dp[i][j + 1] : 0)) % M
+                    ) % M;
+                }
+            }
+            dp = temp;
+        }
+
+        return count;
+    }
+};
+```
+
+**Line 1-2:** Class definition for the `Solution` class, which contains the `findPaths` method.
+
+**Line 3-4:** Function signature for the `findPaths` method, which takes in the dimensions of the grid (`m` and `n`), the number of moves (`N`), and the starting position (`x` and `y`).
+
+**Line 5:** Constant `M` is defined to be 1000000000 + 7. It's often used as a modulus value in modulo arithmetic.
+
+**Line 6-7:** A 2D vector `dp` of size `m x n` is created and initialized with zeros. This vector is used to store the number of ways to reach each cell.
+
+**Line 8:** The starting position `(x, y)` is set to 1, indicating that there is one way to reach this cell.
+
+**Line 9:** `count` is initialized to 0. It will be used to keep track of the total number of paths.
+
+**Line 11-26:** This is the main loop that iterates over the number of moves (`N`).
+
+**Line 12-27:** Inside the loop, a new 2D vector `temp` is created to store the updated counts for each cell after the current move.
+
+**Line 13-26:** Nested loops iterate over each cell in the grid.
+
+**Line 14-17:** If the current cell is on the border of the grid, update the `count` by adding the count of paths from the current cell.
+
+**Line 18-23:** Calculate the updated count for the current cell based on the counts of paths from neighboring cells.
+
+**Line 24-25:** Perform modulo operation to prevent overflow and assign the updated count to the `temp` vector.
+
+**Line 27:** Update the `dp` vector with the counts from the `temp` vector.
+
+**Line 29-31:** The final count is returned, representing the total number of paths to move out of the grid within the given number of moves.
+
+This code uses dynamic programming to efficiently calculate the number of paths. The `dp` vector is updated iteratively based on the counts from previous moves. The `count` variable keeps track of the total number of paths considering the conditions mentioned.

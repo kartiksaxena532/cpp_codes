@@ -11,3 +11,4 @@ agar koi modulo lena hai toh uss value ko ek int ya kisi aur mien store kar lo
 like int M = 100000007 ; 
 
 aur jab return karo ans toh (return ans % M) karo iski maa ka maje hi maje
+

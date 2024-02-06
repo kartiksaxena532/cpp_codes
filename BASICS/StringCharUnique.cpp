@@ -1,14 +1,20 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
-       unordered_map<char, int> mp;
-
-        for (auto a : s) mp[a]++;
-        for (int i = 0; i < s.size(); i++)if(mp[s[i]] == 1)return i;
-
+        int arr[26]={0};
+        int n=s.size();
+        for(int i=0;i<n;i++){
+            int ch=s[i]-'a';
+            arr[ch]++;
+        }
+        for(int i=0;i<n;i++){
+            int ch=s[i]-'a';
+            if(arr[ch]==1)
+            return i;
+        }
         return -1;
     }
-}; 
+};
 
 // range of for loop 
 // from a to s auto will make a range of for loop

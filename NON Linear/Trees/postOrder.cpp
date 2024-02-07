@@ -22,6 +22,9 @@ public:
  postOrder(root->left,ans);
 postOrder(root->right,ans);
 ans.push_back(root->val);
+        //phele left sub tree
+        fir right subtree
+            aur fir root
         
        
     }

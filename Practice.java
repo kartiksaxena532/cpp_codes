@@ -42,5 +42,11 @@ public class Main
 		else{
 		    System.out.println("abey tu toh false hai");
 		}
+			if (myNumber <10 && kartik){
+		    System.out.println("aaja bhai khadfa kya hai");
+		}
+		else{
+		    System.out.println("wushang clan");
+		}
 	}
 }

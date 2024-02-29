@@ -6,7 +6,13 @@ public class Main
     public static Scanner scanner = new Scanner(System.in);
     
 	public static void main(String[] args) {
-	    int name =  Integer.MAX_VALUE ;
+	    kartik();
+
+}
+
+
+public static void kartik(){
+    	    int name =  Integer.MAX_VALUE ;
 		System.out.println("Hello World " + name);
 		
 		int myNumber = 1; 
@@ -87,8 +93,8 @@ public class Main
 	}while(kartozz<=10);
 	
 	
-	}
+	
 	
 
-
+}
 }

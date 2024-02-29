@@ -92,7 +92,7 @@ public static void kartik(){
 	    kartozz++;
 	}while(kartozz<=10);
 	
-	
+	rf
 	
 	
 

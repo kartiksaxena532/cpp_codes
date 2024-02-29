@@ -73,5 +73,11 @@ public class Main
 	for(int i = 0 ; i<time; i++){
 	    System.out.println("i= "+i);
 	}
+		
+	for(int j = 100 ; j>=time; --j){ //reversse looop
+	    System.out.println("i= "+j);
+	}
+	
+	
 	}
 }

@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Main
 {
@@ -66,6 +67,11 @@ public class Main
 	     case 12 :
 	        System.out.println("Oh its " + time + "hr" + " its chai time");
 	        break;
+	}
+	
+	
+	for(int i = 0 ; i<10; i++){
+	    System.out.println(i);
 	}
 	}
 }

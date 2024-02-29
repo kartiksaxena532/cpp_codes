@@ -48,5 +48,14 @@ public class Main
 		else{
 		    System.out.println("wushang clan");
 		}
+
+
+
+				if (myNumber >10 || !kartik){
+		    System.out.println("aaja bhai khadfa kya hai");
+		}
+		else{
+		    System.out.println("wushang clan");
+		}
 	}
 }

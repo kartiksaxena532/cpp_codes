@@ -81,8 +81,8 @@ public class Main
 
     int kartozz=0 ;
 	
-	do{ 
-	    System.out.println(kartooz);
+	do { 
+	    System.out.println(kartozz);
 	    
 	}while(kartozz>=1);
 	

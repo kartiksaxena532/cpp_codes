@@ -78,15 +78,17 @@ public class Main
 	    System.out.println("i= "+j);
 	}
 	
-	
-	}
-	
-	int kartozz=0 ;
+
+    int kartozz=0 ;
 	
 	do{ 
 	    System.out.println(kartooz);
 	    
-	}while(kartozz>=10)
+	}while(kartozz>=1);
 	
+	
+	}
+	
+
 
 }

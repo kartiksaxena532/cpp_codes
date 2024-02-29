@@ -9,5 +9,11 @@ public class Arrays{
        for ( int i = 0 ; i<num.length ; i++){
        System.out.println(num[i]);
        }
+       
+       String[] friends={"maria","siya","gundi","didi","chorni"};
+       
+       for( String friend : friends ){
+           System.out.println(friend);
+       }
   }
 }

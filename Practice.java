@@ -1,13 +1,9 @@
-/******************************************************************************
-
-                            Online Java Compiler.
-                Code, Compile, Run and Debug java program online.
-Write your code in this editor and press "Run" button to execute it.
-
-*******************************************************************************/
-
+import java.util.Scanner;
 public class Main
 {
+    
+    public static Scanner scanner = new Scanner(System.in);
+    
 	public static void main(String[] args) {
 	    int name =  Integer.MAX_VALUE ;
 		System.out.println("Hello World " + name);
@@ -34,7 +30,8 @@ public class Main
 				System.out.println(myNumber--);
 					System.out.println(--myNumber);
 						System.out.println(++myNumber);
-				boolean kartik = true;
+						
+		boolean kartik = true;
 		
 		if (kartik==false){
 		    System.out.println("hello bhai tu toh true hai");
@@ -42,20 +39,33 @@ public class Main
 		else{
 		    System.out.println("abey tu toh false hai");
 		}
-			if (myNumber <10 && kartik){
+		
+		
+		if (myNumber <10 && kartik){
 		    System.out.println("aaja bhai khadfa kya hai");
 		}
 		else{
 		    System.out.println("wushang clan");
 		}
-
-
-
-				if (myNumber >10 || !kartik){
+		
+			if (myNumber >10 || !kartik){
 		    System.out.println("aaja bhai khadfa kya hai");
 		}
 		else{
 		    System.out.println("wushang clan");
 		}
+		
+	int time = scanner.nextInt();
+	
+	
+	switch(time){
+	    case 10 :
+	        System.out.println("Oh its " + time + "hr" + "\nits coffee time");
+	        break;
+	    
+	     case 12 :
+	        System.out.println("Oh its " + time + "hr" + " its chai time");
+	        break;
+	}
 	}
 }

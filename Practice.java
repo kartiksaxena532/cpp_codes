@@ -83,8 +83,8 @@ public class Main
 	
 	do { 
 	    System.out.println(kartozz);
-	    
-	}while(kartozz>=1);
+	    kartozz++;
+	}while(kartozz<=10);
 	
 	
 	}

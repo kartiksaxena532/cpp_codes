@@ -80,4 +80,13 @@ public class Main
 	
 	
 	}
+	
+	int kartozz=0 ;
+	
+	do{ 
+	    System.out.println(kartooz);
+	    
+	}while(kartozz>=10)
+	
+
 }

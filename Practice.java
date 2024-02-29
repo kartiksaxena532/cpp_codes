@@ -34,6 +34,13 @@ public class Main
 				System.out.println(myNumber--);
 					System.out.println(--myNumber);
 						System.out.println(++myNumber);
+				boolean kartik = true;
 		
+		if (kartik==false){
+		    System.out.println("hello bhai tu toh true hai");
+		}
+		else{
+		    System.out.println("abey tu toh false hai");
+		}
 	}
 }

@@ -19,3 +19,7 @@ ek map ban gya jisse ki char ko ek interger value assign ho jaayegi
 
 //today we are just a new code of line away in the whole thing
 
+/O Stream Optimization:
+
+std::ios_base::sync_with_stdio(0); and cin.tie(0);: These lines optimize input and output streams for faster execution. sync_with_stdio(0) disables synchronization between C and C++ standard streams, and tie(0) unties cin from cout, improving performance.
+

@@ -22,4 +22,16 @@ ek map ban gya jisse ki char ko ek interger value assign ho jaayegi
 /O Stream Optimization:
 
 std::ios_base::sync_with_stdio(0); and cin.tie(0);: These lines optimize input and output streams for faster execution. sync_with_stdio(0) disables synchronization between C and C++ standard streams, and tie(0) unties cin from cout, improving performance.
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
 
+int main() {
+    
+    cin.tie(0);
+    int n;
+    cin>>n;
+    cout<<n<<endl;
+
+    return 0;
+}

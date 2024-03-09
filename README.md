@@ -16,3 +16,6 @@ aur jab return karo ans toh (return ans % M) karo iski maa ka maje hi maje
 toh use unordered_map <char , int > mp ; 
 
 ek map ban gya jisse ki char ko ek interger value assign ho jaayegi 
+
+//today we are just a new code of line away in the whole thing
+

@@ -40,3 +40,4 @@ toh use while loop i aur j declare karo num1[i] aur num2[j] jab tak equal na ho 
 
 
 
+new
